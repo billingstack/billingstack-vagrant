@@ -1,0 +1,18 @@
+[submodule "cookbooks/rabbitmq-openstack"]
+	path = cookbooks/rabbitmq-openstack
+	url = https://github.com/rcbops-cookbooks/rabbitmq-openstack
+[submodule "cookbooks/mysql"]
+	path = cookbooks/mysql
+	url = https://github.com/opscode-cookbooks/mysql
+[submodule "cookbooks/apache"]
+	path = cookbooks/apache
+	url = git://github.com/opscode-cookbooks/apache2.git
+[submodule "cookbooks/rabbitmq"]
+	path = cookbooks/rabbitmq
+	url = https://github.com/opscode-cookbooks/rabbitmq
+[submodule "cookbooks/apt"]
+	path = cookbooks/apt
+	url = https://github.com/opscode-cookbooks/apt
+[submodule "cookbooks/database"]
+	path = cookbooks/database
+	url = https://github.com/opscode-cookbooks/database
