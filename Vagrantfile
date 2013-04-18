@@ -46,6 +46,7 @@ Vagrant.configure("2") do |config|
     chef.add_recipe("apt")
     chef.add_recipe("rabbitmq")
     chef.add_recipe("mysql::server")
+    chef.add_recipe("billingstack::repository")
     chef.add_recipe("billingstack::central")
     chef.add_recipe("billingstack::api")
     
