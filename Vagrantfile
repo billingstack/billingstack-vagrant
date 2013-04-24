@@ -2,14 +2,15 @@ Vagrant.require_plugin("berkshelf-vagrant")
 
 Vagrant.configure("2") do |config|
   config.vm.hostname   = "billingstack"
-  # It seems the Ubuntu provided boxes don't work -_-
   config.vm.box        = "ubuntu-1204-chef"
   config.vm.box_url    = "https://s3.amazonaws.com/gsc-vagrant-boxes/ubuntu-12.04-omnibus-chef.box"
+
   config.vm.network    :private_network, ip: "192.168.50.1"
   config.vm.network    :forwarded_port, guest: 80, host: 9080
   config.vm.network    :forwarded_port, guest: 9091, host: 9091
   config.ssh.max_tries = 40
   config.ssh.timeout   = 120
+
   config.berkshelf.enabled = true
 
   config.vm.provider :virtualbox do |vbox|
